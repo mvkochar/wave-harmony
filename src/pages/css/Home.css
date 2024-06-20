@@ -1,0 +1,34 @@
+.home-main {
+    padding-top: 150px;
+    padding-bottom: 285px;
+    padding-left: 260px;
+    background: url('/public/images/home-main-bg.png') no-repeat;
+    color: #FFFFFF;
+}
+
+.home-main-title {
+    font-weight: 500;
+    font-size: 90px;
+}
+
+.home-main-desc {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 350;
+    font-size: 26px;
+    line-height: 1.4;
+}
+
+.home-main-buy {
+    width: 175px;
+    margin-top: 50px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}

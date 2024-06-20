@@ -1,0 +1,47 @@
+.header {
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+.header-logo {
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+.header-nav {
+    width: fit-content;
+    margin: 24px auto;
+    margin-bottom: 0;
+    gap: 30px;
+    list-style-type: none;
+
+    .certificates {
+        padding-right: 24px;
+        background: url('/public/images/gift.png') no-repeat right;
+    }
+
+    .sale a {
+        color: #F93C00;
+    }
+}
+
+.header-nav-item {
+    display: block;
+    width: fit-content;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header-nav-item a {
+    font-weight: 350;
+    font-size: 17px;
+    color: #2B2A28;
+}
+
+.header-nav-item:hover {
+    background-color: #FFECC8;
+    border-radius: 10px;
+}
