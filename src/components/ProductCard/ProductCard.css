@@ -1,0 +1,43 @@
+.product-card-wish {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.product-card-price {
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2C2C2C;
+}
+
+.product-card-type,
+.product-card-sizes {
+    color: #2C2C2C;
+}
+
+.product-card-type {
+    margin-top: 1px;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.product-card-sizes {
+    margin-top: 5px;
+    gap: 7px;
+    font-size: 16px;
+
+    .sizes-divider {
+        width: 8px;
+        height: 0px;
+        border: 1px solid #E3E3E3;
+        transform: rotate(90deg);
+
+        &:last-child {
+            display: none;
+        }
+    }
+}

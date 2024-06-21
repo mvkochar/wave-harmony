@@ -32,3 +32,148 @@
     font-size: 20px;
     color: #FFFFFF;
 }
+
+.home-popular {
+    margin-top: 80px;
+    margin-left: 260px;
+    margin-right: 260px;
+}
+
+.home-bl-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #2C2C2C;
+}
+
+.home-bl-subtitle {
+    margin-top: 10px;
+    font-weight: 350;
+    font-size: 20px;
+    color: #444444;
+}
+
+.home-popular-actions {
+    button {
+        display: block;
+        width: 54px;
+        height: 54px;
+        background-color: transparent;
+        border: 1px solid #71B2B4;
+        border-radius: 15px;
+        cursor: pointer;
+
+        &:nth-child(2) {
+            margin-left: 15px;
+        }
+    }
+}
+
+.home-popular-catalog {
+    display: block;
+    width: 246px;
+    margin-left: 111px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    border: 1px solid #71B2B4;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.home-popular-box {
+    margin-top: 78px;
+}
+
+.home-review {
+    margin-top: 230px;
+    margin-left: 260px;
+    margin-right: 260px;
+    background: url('/public/images/home-review-bg.png') no-repeat;
+}
+
+.home-review-more {
+    width: 224px;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    border: 1px solid #71B2B4;
+    border-radius: 15px;
+    text-align: center;
+    background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.home-review-box {
+    margin-top: 60px;
+    gap: 40px;
+}
+
+.home-review-other {
+    padding-right: 20px;
+    overflow-y: scroll;
+    flex-shrink: 0;
+}
+
+.home-review-about {
+    width: 864px;
+    padding-top: 144px;
+    padding-bottom: 144px;
+    padding-left: 105px;
+    padding-right: 121px;
+    background-color: #FFFFFF;
+    border-radius: 80px;
+
+    .review-author-name {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 1.4;
+        color: #2C2C2C
+    }
+
+    .review-author-info {
+        margin-top: 5px;
+        gap: 10px;
+    }
+
+    .review-author-social {
+        font-size: 19px;
+        background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .review-author-stats {
+        font-weight: 500;
+        font-size: 16px;
+        color: #848484;
+    }
+
+    .review-author-desc {
+        width: 310px;
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 1.4;
+        color: #2C2C2C;
+    }
+
+    .review-author-links {
+        margin-top: 15px;
+        gap: 20px;
+    }
+
+    .review-author-links a {
+        display: block;
+        font-size: 18px;
+        background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
