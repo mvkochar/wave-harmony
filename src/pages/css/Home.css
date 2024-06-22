@@ -177,3 +177,82 @@
         background-clip: text;
     }
 }
+
+.home-about {
+    height: 1060px;
+    margin-top: 120px;
+    padding-top: 100px;
+    padding-left: 260px;
+    padding-right: 328px;
+    background-color: #F8F8F8;
+
+    .home-benefits {
+        margin-top: 71px;
+        flex-wrap: wrap;
+        column-gap: 68px;
+        row-gap: 90px;
+        color: #2C2C2C;
+    }
+
+    .home-benefits-title {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .home-benefits-desc {
+        width: 290px;
+        margin-top: 13px;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+}
+
+.home-about .home-bl-title {
+    line-height: 1.4;
+}
+
+.home-about-wave {
+    margin-top: 64px;
+}
+
+.home-about-quote {
+    gap: 17px;
+    margin-bottom: 65px;
+
+    .home-benefits-desc {
+        width: 425px;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.home-insta {
+    margin-top: 110px;
+    margin-bottom: 120px;
+    margin-left: 260px;
+    margin-right: 260px;
+}
+
+.home-insta-link {
+    display: block;
+    width: 270px;
+    height: 54px;
+    padding-top: 11px;
+    border: 1px solid #21A5B5;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    align-self: flex-end;
+}
+
+.home-insta-box {
+    gap: 30px;
+}
