@@ -4,6 +4,48 @@
     padding-left: 260px;
     background: url('/public/images/home-main-bg.png') no-repeat;
     color: #FFFFFF;
+
+    .advantage-wr {
+        width: 24px;
+        height: 24px;
+        background-color: #FFB641;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        outline: 8px solid rgba(255, 255, 255, 0.3);
+        border-radius: 100%;
+        position: absolute;
+        top: 242px;
+        left: 892px;
+    }
+
+    .advantage-btn {
+        display: block;
+        width: 24px;
+        height: 24px;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-size: 16px;
+    }
+
+    .advantage-info {
+        width: 260px;
+        padding-top: 20px;
+        padding-bottom: 24px;
+        padding-left: 25px;
+        padding-right: 35px;
+        background-color: #FFFFFF;
+        filter: drop-shadow(0px 7px 25px rgba(0, 0, 0, 0.15));
+        border-radius: 20px;
+        font-size: 18px;
+        line-height: 1.3;
+        color: #2C2C2C;
+        position: absolute; 
+        top: 209px;
+        left: 591px;
+    }
 }
 
 .home-main-title {
@@ -83,6 +125,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+
+    &:hover {
+        background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+        -webkit-text-fill-color: #FFFFFF;
+    }
 }
 
 .home-popular-box {
@@ -107,6 +154,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+
+    &:hover {
+        background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+        -webkit-text-fill-color: #FFFFFF;
+    }
 }
 
 .home-review-box {
@@ -251,6 +303,11 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     align-self: flex-end;
+
+    &:hover {
+        background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+        -webkit-text-fill-color: #FFFFFF;
+    }
 }
 
 .home-insta-box {

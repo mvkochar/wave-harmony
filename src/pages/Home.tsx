@@ -3,12 +3,24 @@ import './css/Home.css'
 import ProductCard from '../components/ProductCard/ProductCard'
 
 const Home = () => {
+  const [advantage, setAdvantage] = React.useState(false)
+  const handleAdvantage = () => {
+    setAdvantage((prevState) => {
+      return (
+        !prevState
+      )
+    })
+  }
   return (
     <>
-      <main className='home-main'>
+      <main className='home-main pos-r'>
         <h1 className="home-main-title">Ocean</h1>
         <div className="home-main-desc">with long sleeves</div>
         <button className='home-main-buy'>Buy Ocean</button>
+        <div className="advantage-wr">
+          <button className='advantage-btn' onClick={handleAdvantage}>{advantage ? "-" : "+"}</button>
+        </div>
+        <div className={advantage ? "advantage-info" : "d-n" }>Invisible seams, perfect fit into the design</div>
       </main>
       <section className='home-popular'>
         <div className="d-f jc-sb align-center">
