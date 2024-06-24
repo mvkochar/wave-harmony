@@ -1,0 +1,78 @@
+.about-wr {
+    margin-left: 260px;
+}
+
+.about-caption {
+    margin-top: 80px;
+    margin-left: 260px;
+    margin-right: 302px;
+    color: #2C2C2C;
+}
+
+.about-title {
+    margin-bottom: 30px;
+    font-size: 38px;
+}
+
+.about-desc {
+    max-width: 883px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.about-benefits {
+    margin-top: 80px;
+    margin-left: 260px;
+    margin-right: 260px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.about-benefits-item {
+    width: 450px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    border-radius: 50px;
+    color: #2C2C2C;
+
+    .benefits-item-num {
+        width: 44px;
+        height: 44px;
+        margin-left: 82%;
+        padding-top: 12px;
+        padding-bottom: 13px;
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        color: #8EC9CF;
+    }
+
+    .benefits-item-title {
+        margin-top: 6px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .benefits-item-desc {
+        max-width: 292px;
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    &:nth-child(1),
+    &:nth-child(3),
+    &:nth-child(5) {
+        background-color: #DEF2F4;
+    }
+
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6) {
+        background-color: #EAF4EE;
+    }
+}

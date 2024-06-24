@@ -18,7 +18,7 @@ function handleClick(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
 
 const PageBreadcrumbs = ({ rootPage, prevPage, currentPage, isPrevPage = false }: PageBreadcrumbsProps) => {
     return (
-        <div role="presentation" onClick={handleClick} style={{ marginLeft: "100px", marginTop: "48px" }}>
+        <div role="presentation" onClick={handleClick} style={{ marginLeft: "260px", marginTop: "48px" }}>
             <Breadcrumbs aria-label="breadcrumb">
                 <Link to='/' style={{ fontWeight: 400, fontSize: "18px", color: "#2C2C2C" }}>{rootPage}</Link>
                 {isPrevPage ? <Link to='/catalog' style={{ fontWeight: 400, fontSize: "18px", color: "#2C2C2C" }}>{prevPage}</Link> : null}

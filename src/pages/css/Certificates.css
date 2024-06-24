@@ -1,0 +1,94 @@
+.certificates-main {
+    margin-top: 80px;
+    margin-bottom: 120px;
+    margin-left: 360px;
+    margin-right: 360px;
+}
+
+.certificates-main-title {
+    font-size: 38px;
+    line-height: 1.4;
+    color: #2C2C2C;
+}
+
+.sertificates-main-desc {
+    width: 540px;
+    margin-top: 15px;
+    font-size: 19px;
+    line-height: 1.4;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.certificates-main-fm {
+    margin-top: 32px;
+
+    .input-bl {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    label {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        color: #848484;
+    }
+
+    input {
+        display: block;
+        margin-top: -7px;
+        width: 540px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 17px;
+        border: 0.5px solid #CFCFCF;
+        border-radius: 15px;
+        outline: none;
+        font-family: 'Futura PT', sans-serif;
+        font-size: 18px;
+        color: #2C2C2C;
+    }
+
+    .input-denom {
+        background: url('/public/images/dollar.svg') no-repeat 95%;
+    }
+
+    .sertificate-email {
+        border: 0.5px solid #71B2B4;
+    }
+
+    textarea {
+        width: 540px;
+        height: 130px;
+        padding-top: 17px;
+        padding-left: 17px;
+        border: 0.5px solid #CFCFCF;
+        border-radius: 15px;
+        outline: none;
+        font-family: 'Futura PT', sans-serif;
+        font-size: 18px;
+        line-height: 1.4;
+        color: #2C2C2C;
+    }
+
+    a {
+        display: block;
+        width: 540px;
+        padding-top: 16px;
+        padding-bottom: 18px;
+        background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+        border-radius: 15px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
