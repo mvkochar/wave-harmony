@@ -59,25 +59,25 @@ const Home = () => {
           <ProductCard
             image='/images/popular/1.png'
             price='67'
-            prodeuctType='Geometry'
+            productType='Geometry'
             sizes={['XS', 'S', 'M', 'L', 'by measurements']}
           />
           <ProductCard
             image='/images/popular/2.png'
             price='67'
-            prodeuctType='Geometry'
+            productType='Geometry'
             sizes={['XS', 'S', 'M', 'L', 'by measurements']}
           />
           <ProductCard
             image='/images/popular/3.png'
             price='67'
-            prodeuctType='Geometry'
+            productType='Geometry'
             sizes={['XS', 'S', 'M', 'L', 'by measurements']}
           />
           <ProductCard
             image='/images/popular/4.png'
             price='67'
-            prodeuctType='Geometry'
+            productType='Geometry'
             sizes={['XS', 'S', 'M', 'L', 'by measurements']}
           />
         </div>

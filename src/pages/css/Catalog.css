@@ -1,0 +1,63 @@
+.catalog-top {
+    margin-top: 60px;
+    margin-left: 260px;
+}
+
+.catalog-title {
+    font-size: 38px;
+    color: #2C2C2C;
+}
+
+.catalog-filters {
+    margin-top: 40px;
+    gap: 40px;
+
+    select {
+        display: block;
+        padding-bottom: 4px;
+        padding-right: 15px;
+        border: none;
+        outline: none;
+        font-family: 'Futura PT', sans-serif;
+        font-size: 17px;
+        color: #2C2C2C;
+    }
+}
+
+.catalog-content {
+    margin-top: 70px;
+    margin-bottom: 120px;
+    margin-left: 260px;
+    margin-right: 258px;
+    gap: 115px;
+
+    aside {
+        flex-shrink: 0;
+
+        .tabs-btn_active {
+            border-bottom: 1px solid #2C2C2C;
+        }
+    }
+}
+
+.catalog-tabs-btn {
+    display: block;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: #2C2C2C;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.catalog-content-box {
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+
+}
+

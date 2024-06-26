@@ -5,12 +5,12 @@ type ProductCardProps = {
     id?: number
     image: string
     price: string
-    prodeuctType: string;
+    productType: string;
     sizes: string[]
     isLiked?: boolean
 }
 
-const ProductCard = ({ id = -1, image, price, prodeuctType, sizes, isLiked = false }: ProductCardProps) => {
+const ProductCard = ({ id = -1, image, price, productType, sizes, isLiked = false }: ProductCardProps) => {
     
     const [wish, setWish] = React.useState(isLiked) 
     
@@ -31,7 +31,7 @@ const ProductCard = ({ id = -1, image, price, prodeuctType, sizes, isLiked = fal
                 </button>
             </div>
             <div className="product-card-price">${price}</div>
-            <div className="product-card-type">{prodeuctType}</div>
+            <div className="product-card-type">{productType}</div>
             <div className="product-card-sizes d-f align-center">
                 {
                     sizes.map((elem) => {

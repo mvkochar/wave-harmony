@@ -1,0 +1,61 @@
+.swimsuit-content {
+    margin-top: 100px;
+    margin-bottom: 120px;
+    margin-left: 360px;
+    margin-right: 360px;
+    color: #2C2C2C;
+    gap: 250px;
+
+    .divider {
+        width: 620px;
+        height: 0;
+        margin-top: 40px;
+        border: 1px solid #F0F0F0;
+    }
+}
+
+.swimsuit-title {
+    width: 450px;
+    font-size: 38px;
+    line-height: 1.4;
+}
+
+.swimsuit-subtitle {
+    width: 456px;
+    margin-top: 15px;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.swimsuit-content-step {
+    margin-top: 35px;
+
+    .step-title {
+        font-size: 24px;
+    }
+
+    .step-box {
+        margin-top: 30px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .step-box-item {
+        width: 300px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        border: 0.5px solid #CFCFCF;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .box-item__active {
+        border: 0.5px solid #71B2B4;
+        background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
