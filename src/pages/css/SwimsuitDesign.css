@@ -59,3 +59,151 @@
         background-clip: text;
     }
 }
+
+.swimsuit-control {
+    margin-top: 30px;
+
+    .steps-info {
+        gap: 8px;
+        font-size: 17px;
+        color: #444444;
+    }
+
+    .current-step {
+        width: 28px;
+        height: 28px;
+        padding-top: 3px;
+        background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+        border-radius: 90px;
+        font-size: 17px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+.swimsuit-control-actions {
+    gap: 15px;
+
+    .previous-btn {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .next-btn {
+        display: block;
+        width: 204px;
+        padding-top: 16px;
+        padding-bottom: 18px;
+        background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+}
+
+.step-answers {
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.colors-box  {
+    margin-top: 35px;
+    flex-wrap: wrap;
+    column-gap: 21px;
+    row-gap: 20px;
+
+    .color-active {
+        border: 2px solid #71B2B4;
+    }
+}
+
+.colors-box-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.colors-box-item:nth-child(1) {
+    background-color: #5BC99B;
+}
+
+.colors-box-item:nth-child(2) {
+    background-color: #F9E66D;
+}
+
+.colors-box-item:nth-child(3) {
+    background-color: #FAE8DA;
+}
+
+.colors-box-item:nth-child(4) {
+    background-color: #E1312A;
+}
+
+.colors-box-item:nth-child(5) {
+    background-color: #1B1B27;
+}
+
+.colors-box-item:nth-child(6) {
+    background-color: #1543DF;
+}
+
+.colors-box-item:nth-child(7) {
+    background-color: #449775;
+}
+
+.colors-box-item:nth-child(8) {
+    background-color: #50AAD6;
+}
+
+.colors-box-item:nth-child(9) {
+    background-color: #75209F;
+}
+
+.colors-box-item:nth-child(10) {
+    background-color: #EC236C;
+}
+
+.colors-box-item:nth-child(11) {
+    background-color: #F48825;
+}
+
+.step-link {
+    font-size: 18px;
+    background: linear-gradient(90deg, #21A5B5 0%, #71B2B4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.step-four-fm {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 20px;
+
+    label {
+        display: block;
+        font-weight: 700;
+        font-size: 14px;
+        color: #848484;
+    }
+
+    input {
+        display: block;
+        width: 620px;
+        margin-top: -7px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 17px;
+        border: 0.5px solid #CFCFCF;
+        border-radius: 15px;
+        font-family: 'Futura PT', sans-serif;
+        font-size: 18px;
+        color: #2C2C2C;
+    }
+}
