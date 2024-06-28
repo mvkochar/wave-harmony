@@ -1,0 +1,99 @@
+.sizes-title {
+    margin-top: 80px;
+    margin-left: 258px;
+    font-size: 38px;
+    color: #2C2C2C;
+}
+
+.sizes-subtitle {
+    margin-top: 20px;
+    margin-left: 260px;
+    font-size: 19px;
+    color: #2C2C2C;
+}
+
+.sizes-box {
+    margin-top: 80px;
+    margin-left: 260px;
+    margin-right: 260px;
+}
+
+.sizes-item {
+    color: #2C2C2C
+}
+
+.sizes-item-main {
+    width: 420px;
+    height: 620px;
+    padding-top: 44px;
+}
+
+.sizes-item-title {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.sizes-item-desc {
+    width: 420px;
+    margin-top: 25px;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.sizes-item:nth-child(1) .sizes-item-main {
+    background: url("/public/images/sizes1.png") no-repeat;
+}
+
+.sizes-item:nth-child(2) .sizes-item-main {
+    background: url("/public/images/sizes2.png") no-repeat;
+}
+
+.sizes-item:nth-child(3) .sizes-item-main {
+    background: url("/public/images/sizes3.png") no-repeat;
+}
+
+.sizes-tb {
+    width: 1440px;
+    margin-top: 100px;
+    margin-left: 260px;
+    margin-right: 260px;
+    padding-top: 75px;
+    padding-bottom: 65px;
+    padding-left: 93px;
+    padding-right: 47px;
+    border: 1px solid #F0F0F0;
+    font-size: 19px;
+
+    th {
+        padding-bottom: 20px;
+        font-weight: 500;
+        color: #2C2C2C;
+    }
+
+    td {
+        padding-bottom: 20px;
+        text-align: center;
+        color: #444444;
+    }
+
+}
+
+.sizes-tb tbody tr:last-child td {
+    padding-bottom: 0;
+}
+
+.sizes-note {
+    margin-top: 100px;
+    margin-left: 260px;
+    margin-right: 260px;
+
+    p {
+        margin-bottom: 10px;
+        font-size: 19px;
+        color: #2C2C2C;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

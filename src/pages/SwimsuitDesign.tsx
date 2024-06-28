@@ -1,9 +1,10 @@
 import React from 'react'
 import PageBreadcrumbs from '../components/PageBreadcrumbs/PageBreadcrumbs'
 import './css/SwimsuitDesign.css'
+import { Link } from 'react-router-dom'
 
 const SwimsuitDesign = () => {
-    const [step, setStep] = React.useState(4)
+    const [step, setStep] = React.useState(1)
     const incrStep = () => {
         setStep((preVState) => {
             return (
@@ -11,7 +12,7 @@ const SwimsuitDesign = () => {
             )
         })
     }
-    
+
     const decrStep = () => {
         setStep((preVState) => {
             return (
@@ -19,8 +20,8 @@ const SwimsuitDesign = () => {
             )
         })
     }
-
-    return (
+  
+    return (    
         <>
             <PageBreadcrumbs
                 rootPage='Home'
@@ -28,14 +29,14 @@ const SwimsuitDesign = () => {
             />
             <div className="swimsuit-content d-f">
                 <div><img src="/images/swimsuit-design.png" alt="swimsuit-design" /></div>
-                <div>
+                <div className={step === 6 ? 'd-n' : 'd-b'}>
                     <h1 className="swimsuit-title">Create the perfect swimsuit in just 5 minutes</h1>
                     <h4 className="swimsuit-subtitle">
                         In our flexible designer, you can create a unique and inimitable swimsuit to order
                     </h4>
                     <div className="divider"></div>
                     <div className="swimsuit-content-step">
-                        <div className={step === 1 ? "step-one" : "d-n" }>
+                        <div className={step === 1 ? "step-one" : "d-n"}>
                             <div className="step-title">Which style do you like?</div>
                             <div className="step-box d-f">
                                 <div className="step-box-item box-item__active">Separate sleeveless</div>
@@ -55,7 +56,7 @@ const SwimsuitDesign = () => {
                                 <div className="step-box-item box-item__active">Swimsuit front zipper</div>
                                 <div className="step-box-item">Swimsuit back zipper</div>
                             </div>
-                            <div className="step-title" style={{marginTop: "35px"}}>Collar</div>
+                            <div className="step-title" style={{ marginTop: "35px" }}>Collar</div>
                             <div className="step-answers d-f">
                                 <div className="step-box-item">I want one with a collar</div>
                                 <div className="step-box-item">I want no collar</div>
@@ -84,11 +85,11 @@ const SwimsuitDesign = () => {
                         <div className={step === 4 ? "step-four" : "d-n"}>
                             <div className="d-f jc-sb align-center">
                                 <div className="step-title">Enter your measurements</div>
-                                <a href="" className="step-link">How to take measurements?</a>
+                                <Link to="/sizes" className="step-link">How to take measurements?</Link>
                             </div>
-                            <form action="" className="step-four-fm d-f">
+                            <form action="" className="step-fm d-f">
                                 <div>
-                                    <input type="text" name='bust' placeholder='Bust*'/>
+                                    <input type="text" name='bust' placeholder='Bust*' />
                                 </div>
                                 <div>
                                     <label htmlFor="waist">Waist circumference</label>
@@ -112,7 +113,28 @@ const SwimsuitDesign = () => {
                                 <div>
                                     <input type="text" name='arm' placeholder='Arm length from shoulder to wrist*' />
                                 </div>
-                            </form>       
+                            </form>
+                        </div>
+                        <div className={step === 5 ? "step-five" : "d-n"}>
+                            <div className="step-title">
+                                The last and most important stage is to fill out the feedback <br />
+                                form so that our manager will contact you
+                            </div>
+                            <form action="" className="step-fm d-f">
+                                <div>
+                                    <input type="text" name='orderName' placeholder='Your name*' />
+                                </div>
+                                <div>
+                                    <label htmlFor="orderEmail">Enter your E-mail</label>
+                                    <input type="email" name="orderEmail" id="orderEmail" />
+                                </div>
+                                <div>
+                                    <input type="tel" name="orderPhone" placeholder='Enter your phone number*' />
+                                </div>
+                                <div>
+                                    <textarea name="orderComment" placeholder='Your comment here...'></textarea>
+                                </div>
+                            </form>
                         </div>
                         <div className="divider"></div>
                     </div>
@@ -124,15 +146,28 @@ const SwimsuitDesign = () => {
                             <div>5</div>
                         </div>
                         <div className="swimsuit-control-actions d-f">
-                            <button className='previous-btn' onClick={decrStep} disabled = {step >= 2 ? false : true }>
+                            <button className='previous-btn' onClick={decrStep} disabled={step >= 2 ? false : true}>
                                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="-0.5" y="0.5" width="49" height="49" rx="14.5" transform="matrix(-1 0 0 1 49 0)" stroke="#E3E3E3" />
                                     <path d="M27 30.5L21 25L27 19.5" stroke="#E3E3E3" stroke-width="2" />
                                 </svg>
                             </button>
-                            <button className="next-btn" onClick={incrStep} disabled = {step === 5 ? true : false}>Next step</button>
+                            <button
+                                className="next-btn" onClick={incrStep}
+                                disabled={step === 6 ? true : false}
+                            >
+                                {step === 5 ? "Order" : "Next step"}
+                            </button>
                         </div>
                     </div>
+                </div>
+                <div className={step === 6 ? 'd-b' : 'd-n'}>
+                    <div className="complete-icon"><img src="/images/complete.svg" alt="complete" /></div>
+                    <h1 className="swimsuit-title">Thank you for the order!</h1>
+                    <h4 className="swimsuit-subtitle">
+                        Our managers will contact you shortly to clarify details
+                    </h4>
+                    <a href="" className="swimsuit-payment-link">Go to the payment</a>
                 </div>
             </div>
         </>

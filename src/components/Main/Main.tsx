@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { About, Blog, Catalog, Certificates, Home, SwimsuitDesign } from '../../pages'
+import { About, Blog, Catalog, Certificates, Home, Sizes, SwimsuitDesign } from '../../pages'
 
 const Main = () => {
   return (
@@ -28,6 +28,10 @@ const Main = () => {
         <Route
           path='swimsuit-design'
           element={<SwimsuitDesign/>}
+        />
+        <Route
+          path='sizes'
+          element={<Sizes/>}
         />
     </Routes>
   )
