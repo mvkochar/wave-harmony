@@ -2,6 +2,7 @@ import React from 'react'
 import './css/Home.css'
 import ProductCard from '../components/ProductCard/ProductCard'
 import Review from '../components/Review/Review'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   const [advantage, setAdvantage] = React.useState(false)
@@ -52,7 +53,7 @@ const Home = () => {
                 </defs>
               </svg>
             </button>
-            <a href="" className="home-popular-catalog">View catalog</a>
+            <Link to="/catalog" className="home-popular-catalog">View catalog</Link>
           </div>
         </div>
         <div className="home-popular-box d-f jc-sb">
